@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="hero">
+            <h1>Weather Api</h1>
+            <button id="fetch-btn" class="hero-btn">Fetch Data</button>
+        </div>
+    </div>
+
+    <main id="main" class="display-weather">
+        <h2>Welcome To The Weather App</h2>
+        <p>Here is your current location</p>
+        <div class="latlng-container">
+            <div class="latlng">Lat : <span id="lat">123545</span></div>
+            <div class="latlng">Long : <span id="lng">145212</span></div>
+        </div>
+        <iframe id="iframe" class="map" src=""></iframe>
+        <div class="Weather">
+            <h1>Your Weather Data</h1>
+            <div class="data-container">
+                <div>Location: <span id="city"></span></div>
+                <div>Wind Speed:<span id="windSpeed"></span></div>
+                <div>Humidity : <span id = "Humidity"></span></div>
+                <div>Time Zone : <span id="time"></span></div>
+                <div>Pressure: <span id="pres"></span></div>
+                <div>Wind Direction : <span id="wDirection"></span></div>
+                <div>UV Index : <span id="UV"></span></div>
+                <div>Feels like:<span id="feels"></span>°</div>
+            </div>
+        </div>
+
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
